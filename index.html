@@ -1,120 +1,153 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio • Adja FALL</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar">
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <header class="header">
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- HERO SECTION -->
-  <section id="home" class="section-hero">
+  <!-- HERO -->
+  <section id="home" class="section section-hero">
     <div class="hero-text">
-        <h1>Adja FALL</h1>
-        <p>Etudiante en Securite système d'information,<br>
-        passionnée par la cybersécurité et la protection des données</p>
+      <h1 class="hero-title">Adja FALL</h1>
+      <p class="hero-subtitle">
+        Étudiante en Sécurité des Systèmes d’Information,<br>
+        passionnée par la cybersécurité et la protection des données.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact">Me contacter</a>
+        <a class="btn btn-outline" href="#work">Voir mes expériences</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="portfolio.png" alt="Portrait / illustration">
     </div>
   </section>
 
-  <!-- section about -->
-  <section id="about" class="section-about">
-    <h1>About</h1>
-    <div class="about text">
-    <p>Je suis une personne profondément passionnée par la Sécurité des Systèmes d’Information et le monde de la data, deux domaines qui, à mes yeux, sont aujourd’hui indissociables. À l’ère du numérique, où les données sont devenues une ressource stratégique, je crois fermement que leur exploitation intelligente ne peut exister sans une protection solide, éthique et maîtrisée. <br>
-Ce qui me motive avant tout en SSI, c’est le défi permanent : comprendre comment les systèmes fonctionnent, anticiper les failles, analyser les risques et mettre en place des mécanismes capables de protéger l’information contre les menaces internes et externes. J’aime cette logique de prévention, d’analyse et de résolution de problèmes, où chaque détail compte et où la rigueur est essentielle. La sécurité n’est pas seulement une contrainte technique pour moi, c’est une culture, une manière de penser et d’agir. <br>
-En parallèle, la data me fascine par sa capacité à raconter des histoires, à révéler des tendances invisibles et à soutenir la prise de décision. Collecter, nettoyer, analyser et interpréter les données me permet de transformer des chiffres bruts en valeur concrète. J’apprécie particulièrement le lien entre la data et la sécurité : garantir l’intégrité, la confidentialité et la disponibilité des données tout en permettant leur exploitation efficace.
-Ce qui me distingue, c’est cette volonté de faire le pont entre la sécurité et l’analyse des données. Je m’intéresse à des sujets comme la protection des bases de données, la gouvernance des données, la gestion des accès, la conformité, mais aussi l’utilisation de la data pour renforcer la sécurité elle-même, par exemple à travers la détection d’anomalies ou l’analyse des comportements.
-Curieuse, rigoureuse et toujours en quête d’apprentissage, je cherche constamment à approfondir mes connaissances techniques tout en développant une vision globale des enjeux numériques. Mon objectif est clair : contribuer à des systèmes d’information fiables, sécurisés et intelligents, capables de soutenir durablement les organisations dans un environnement de plus en plus complexe et exposé aux risques.
-Pour moi, la SSI et la data ne sont pas simplement des domaines d’étude ou de travail, ce sont de véritables leviers d’impact, au service de la performance, de la confiance et de l’innovation. le reduire pour un portfolio
+  <!-- ABOUT -->
+  <section id="about" class="section section-about">
+    <h2 class="section-title">About</h2>
+
+    <p class="about-text">
+      Je suis une personne profondément passionnée par la Sécurité des Systèmes d’Information et le monde de la data, deux domaines qui, à mes yeux, sont aujourd’hui indissociables. À l’ère du numérique, où les données sont devenues une ressource stratégique, je crois fermement que leur exploitation intelligente ne peut exister sans une protection solide, éthique et maîtrisée. <br>
+      Ce qui me motive avant tout en SSI, c’est le défi permanent : comprendre comment les systèmes fonctionnent, anticiper les failles, analyser les risques et mettre en place des mécanismes capables de protéger l’information contre les menaces internes et externes. J’aime cette logique de prévention, d’analyse et de résolution de problèmes, où chaque détail compte et où la rigueur est essentielle. La sécurité n’est pas seulement une contrainte technique pour moi, c’est une culture, une manière de penser et d’agir. <br>
+      En parallèle, la data me fascine par sa capacité à raconter des histoires, à révéler des tendances invisibles et à soutenir la prise de décision. Collecter, nettoyer, analyser et interpréter les données me permet de transformer des chiffres bruts en valeur concrète. J’apprécie particulièrement le lien entre la data et la sécurité : garantir l’intégrité, la confidentialité et la disponibilité des données tout en permettant leur exploitation efficace.
+      Ce qui me distingue, c’est cette volonté de faire le pont entre la sécurité et l’analyse des données. Je m’intéresse à des sujets comme la protection des bases de données, la gouvernance des données, la gestion des accès, la conformité, mais aussi l’utilisation de la data pour renforcer la sécurité elle-même, par exemple à travers la détection d’anomalies ou l’analyse des comportements.
+      Curieuse, rigoureuse et toujours en quête d’apprentissage, je cherche constamment à approfondir mes connaissances techniques tout en développant une vision globale des enjeux numériques. Mon objectif est clair : contribuer à des systèmes d’information fiables, sécurisés et intelligents, capables de soutenir durablement les organisations dans un environnement de plus en plus complexe et exposé aux risques.
+      Pour moi, la SSI et la data ne sont pas simplement des domaines d’étude ou de travail, ce sont de véritables leviers d’impact, au service de la performance, de la confiance et de l’innovation.
+    </p>
+
+    </section>
+
+  <!-- WORK -->
+  <section id="work" class="section section-work">
+    <h2 class="section-title">Work</h2>
+
+    <div class="work-grid">
+
+      <article class="card work-card">
+        <p class="badge">Août 2025 – Février 2026</p>
+        <h3 class="card-title">SONATEL – DMGP / Orange Energy</h3>
+        <p class="card-subtitle">Stage</p>
+        <ul class="list">
+          <li>Suivi et régulation des bons de consommation (BC)</li>
+          <li>Mise à jour et contrôle du stock installé</li>
+          <li>Saisie et analyse des données sur Excel et Oracle</li>
+          <li>Appui à la digitalisation des processus</li>
+          <li>Installation et configuration de systèmes Ubuntu</li>
+        </ul>
+      </article>
+
+      <article class="card work-card">
+        <p class="badge">Septembre – Octobre 2024</p>
+        <h3 class="card-title">Delta SA – Assainissement & Bâtiment</h3>
+        <p class="card-subtitle">Stage</p>
+        <ul class="list">
+          <li>Participation à la prospection commerciale</li>
+          <li>Élaboration de fiches techniques et factures</li>
+          <li>Maintenance et installation de matériels informatiques</li>
+          <li>Installation et configuration du système Ubuntu</li>
+        </ul>
+      </article>
+
+    </div>
   </section>
- <!-- section work -->
-  <section id="work" class="section-work">
-  <h1>Work</h1>
 
-  <div class="work-list">
+  <!-- RESUME -->
+  <section id="resume" class="section section-resume">
+    <h2 class="section-title">Resume</h2>
 
-    <article class="work-card">
-      <span class="work-date">Août 2025 – Février 2026</span>
-      <h2>SONATEL – DMGP / Orange Energy</h2>
-      <p class="work-role">Stage</p>
-      <ul>
-        <li>Suivi et régulation des bons de consommation (BC)</li>
-        <li>Mise à jour et contrôle du stock installé</li>
-        <li>Saisie et analyse des données sur Excel et Oracle</li>
-        <li>Appui à la digitalisation des processus</li>
-        <li>Installation et configuration de systèmes Ubuntu</li>
-      </ul>
-    </article>
+    <div class="resume-grid">
 
-    <article class="work-card">
-      <span class="work-date">Septembre – Octobre 2024</span>
-      <h2>Delta SA – Assainissement & Bâtiment</h2>
-      <p class="work-role">Stage</p>
-      <ul>
-        <li>Participation à la prospection commerciale</li>
-        <li>Élaboration de fiches techniques et factures</li>
-        <li>Maintenance et installation de matériels informatiques</li>
-        <li>Installation et configuration du système Ubuntu</li>
-      </ul>
-    </article>
+      <div class="card">
+        <h3 class="card-title">Points forts</h3>
+        <ul class="list">
+          <li>Esprit d’analyse et de synthèse</li>
+          <li>Capacité d’adaptation et apprentissage rapide</li>
+          <li>Rigueur et sens de l’organisation</li>
+          <li>Travail en équipe et communication</li>
+        </ul>
+      </div>
 
-  </div>
-</section>
+      <div class="card">
+        <h3 class="card-title">Compétences techniques</h3>
+        <ul class="list">
+          <li>Langages : Python, SQL, HTML, CSS</li>
+          <li>Outils : Excel, PowerPoint, Word, Oracle, Ubuntu</li>
+          <li>Concepts : SSI, analyse de données, gestion des risques</li>
+        </ul>
+      </div>
 
- <!-- section resume -->
-  <section id="resume">
-    <h1>Resume</h1>
-    <h2>Point fort</h2>
-    <ul>
-      <li>Esprit d’analyse et de synthèse</li>
-      <li>Capacité d’adaptation et apprentissage rapide</li>
-      <li>Rigueur et sens de l’organisation</li>
-      <li>Travail en équipe et communication</li>
-    </ul>
-    <h2>Compétences techniques</h2> 
-    <ul>
-      <li>Langages : Python, SQL, HTML, CSS</li>
-      <li>Outils : Excel, PowerPoint, Word, Oracle, Ubuntu</li>
-      <li>Concepts : Sécurité des systèmes d’information, analyse de données, gestion des risques</li>
-    </ul>
-
+    </div>
   </section>
- <!-- section contact -->
-  <section id="contact">
-    <h1>Contact</h1>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <form class="contact form">
-                    <label for="name">Prenom et nom:</label>
-                    <input type="text" id="name" name="name" required>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="_replyto" required>
+  <!-- CONTACT -->
+  <section id="contact" class="section section-contact">
+    <h2 class="section-title">Contact</h2>
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
+    <div class="card contact-card">
+      <form class="contact-form">
 
-                    <button type="submit">Envoyer</button>
-                </form>
-        
+        <label class="label" for="name">Prénom & Nom</label>
+        <input class="input" type="text" id="name" name="name" placeholder="Votre nom" required>
+
+        <label class="label" for="email">Email</label>
+        <input class="input" type="email" id="email" name="email" placeholder="ex: adja@email.com" required>
+
+        <label class="label" for="message">Message</label>
+        <textarea class="textarea" id="message" name="message" placeholder="Votre message..." required></textarea>
+
+        <button class="btn btn-primary" type="submit">Envoyer</button>
+
+      </form>
+    </div>
   </section>
-  <!-- footer -->
-    <footer>
-        <p>&copy; 2026 Adja FALL. Tous droits réservés.</p>
-    </footer>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Adja FALL — Tous droits réservés.</p>
+  </footer>
+
 </body>
 </html>
